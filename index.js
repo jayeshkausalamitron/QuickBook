@@ -4,12 +4,12 @@ const XLSX = require('xlsx');
 
 // Configure QuickBooks API
 const qbo = new QuickBooks({
-    consumerKey: 'YOUR_CONSUMER_KEY',
-    consumerSecret: 'YOUR_CONSUMER_SECRET',
-    token: 'YOUR_ACCESS_TOKEN',
-    tokenSecret: 'YOUR_ACCESS_TOKEN_SECRET',
-    realmId: 'YOUR_REALM_ID',
-    useSandbox: true // Set to true if you are using the sandbox environment
+    consumerKey: process.env.CONSUMERKEY,
+    consumerSecret: process.env.CONSUMERSECRET,
+    token: process.env.TOKEN,
+    tokenSecret: process.env.TOKENSECRET,
+    realmId: process.env.REALMID,
+    useSandbox: process.env.USESANDBOX // Set to true if you are using the sandbox environment
 });
 
 // Define the report name
