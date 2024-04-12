@@ -18,7 +18,7 @@ const qbo = new QuickBooks({
 const reportName = 'BalanceSheet'; // Change this to the name of the report you want to pull
 
 // Define the cron schedule (e.g., every day at 8 AM)
-const cronSchedule = '0 8 * * *';
+const cronSchedule = '0 0 23 * *';
 
 // Schedule the report pulling and Excel file generation
 cron.schedule(cronSchedule, async () => {
