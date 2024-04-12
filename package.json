@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
     "node-quickbooks": "^2.0.45",
     "xlsx": "^0.18.5"
   }
