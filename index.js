@@ -1,3 +1,4 @@
+require("dotenv").config();
 const QuickBooks = require('node-quickbooks');
 const fs = require('fs');
 const XLSX = require('xlsx');
